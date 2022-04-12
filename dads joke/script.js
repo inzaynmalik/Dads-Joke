@@ -9,10 +9,6 @@ const generateJoke = async () => {
   const data = await res.json();
   jokeEl.innerHTML = data.joke;
 
-  // Fetching with .then()
-  //   fetch("https://icanhazdadjoke.com/", config)
-  //     .then((res) => res.json())
-  //     .then((data) => (jokeEl.innerHTML = data.joke));
 };
 
 generateJoke();
